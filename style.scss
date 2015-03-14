@@ -1,0 +1,51 @@
+---
+---
+
+$header-height: 54px;
+$footer-height: 76px;
+//
+// IMPORTS
+//
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+footer {
+    background-color: #F8F8F8;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  a {
+    color: #999999;
+    font-size: 22px;
+    position: relative;
+    margin-top: 2px;
+  }
+  .row {
+    margin: 20px 0;
+  }
+  .text-muted {
+    padding-top: 7px;
+  }
+  .social {
+    padding-top: 3px;
+    a {
+      text-align: center;
+      display: block;
+      float: left;
+      width: 32px;
+    }
+  }
+}
