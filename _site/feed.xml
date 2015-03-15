@@ -7,12 +7,46 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>You&#39;re up and running!</title>
-        <description>&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+        <title>Nuhabitat Spinner</title>
+        <description>&lt;p data-height=&quot;150&quot; data-theme-id=&quot;13178&quot; data-slug-hash=&quot;pvQyjX&quot; data-default-tab=&quot;result&quot; data-user=&quot;elliotboney&quot; class=&#39;codepen&#39;&gt;
+  See the Pen &lt;a href=&#39;http://codepen.io/elliotboney/pen/pvQyjX/&#39;&gt;Pure CSS Spinner&lt;/a&gt; by Elliot Boney (&lt;a href=&#39;http://codepen.io/elliotboney&#39;&gt;@elliotboney&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/config.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</description>
+        <pubDate>Sat, 15 Mar 2014 00:00:00 -0500</pubDate>
+        <link>/Nuhabitat-Spinner/</link>
+        <guid isPermaLink="true">/Nuhabitat-Spinner/</guid>
+      </item>
+    
+      <item>
+        <title>Jekyll Github.io Page Setup</title>
+        <description>&lt;p&gt;I got my &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; page finally cranking out pages with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Here is a brief rundown of what it does, why it&amp;#39;s
+baller, and how you can get your own going quickly. You should definitely get one started today, it&amp;#39;s free.&lt;/p&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;h3&gt;WTF is &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;?&lt;/h3&gt;
+
+&lt;p&gt;Essentially &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; translates your plain text into static websites and blogs. You can use &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; or &lt;a href=&quot;http://redcloth.org/textile&quot;&gt;Textile&lt;/a&gt; to
+write your posts and pages, and out comes a static site. There is no database to mess with, although you can use
+&lt;a href=&quot;http://jekyllrb.com/docs/collections/&quot;&gt;collections&lt;/a&gt; to store your data. It has a really awesome template language called &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid&lt;/a&gt; that let&amp;#39;s you do stuff like
+this (an example from my own menu):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown-toggle&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Posts &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;caret&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown-menu&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% for p in site.posts %}
+      {% include menu_item.html %}
+    {% endfor %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Get your repo&lt;/h3&gt;
+
+&lt;p&gt;Follow the instructions over at &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; to get your repo started, cloned locally and goin.&lt;/p&gt;
+
+&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file.
+For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+
+&lt;!-- Links follow here --&gt;
 </description>
         <pubDate>Mon, 03 Mar 2014 00:00:00 -0600</pubDate>
         <link>/Hello-World/</link>

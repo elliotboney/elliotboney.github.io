@@ -3,9 +3,10 @@
 
 @import 'bootstrap';
 @import 'mixins';
-@import 'variables';
+@import 'highlights';
 
 
+@import 'post';
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -15,17 +16,16 @@ html {
 }
 
 a {
-    @include prefix(transition, all .3s);
+    @include prefix(transition, color .1s);
     &:hover {
       text-decoration: none;
       color: lighten($link-color, 15%);
     }
-
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: $footer-height;
+  margin-top: $navbar-height+11px;
+  margin-bottom: $footer-height+20px;
 }
 
 .navbar-brand {
@@ -85,6 +85,9 @@ footer {
   }
   .text-muted {
     padding-top: 7px;
+    i {
+      font-size: 16px;
+    }
   }
   .social {
     padding-top: 3px;
@@ -97,7 +100,12 @@ footer {
   }
 }
 
-@import '404';
+iframe[id^="cp_embed"] {
+  border-width: 0 1px 4px 1px;
+  border-color: #e7e7e7;
+}
+
+@import 'dark';
 
 
 // @import 'vendor/animate.css/animate.min.css';

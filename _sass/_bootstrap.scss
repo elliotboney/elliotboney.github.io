@@ -3,7 +3,7 @@
 @import "../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 // Our bootswatch variables
-@import "../assets/vendor/lumen_variables/index";
+@import "variables";
 
 
 // Reset and dependencies
@@ -56,4 +56,3 @@
 
 // Bootswatch
 @import "../assets/vendor/bootswatch/index";
-

@@ -1,8 +1,21 @@
-#fourofour, #page {
+#fourofour, html.dark {
+
+  a {
+    color: desaturate(lighten($link-color, 35%), 50%);
+    &:hover {
+    color: lighten($link-color, 25%);
+
+    }
+  }
+
+  .highlight {
+    background-color: lighten($gray-light, 30%);
+    border-color: $gray-dark;
+  }
 
   body {
     background: $gray;
-    color: invert($gray);
+    color: lighten(invert($gray), 25%);
   }
 
   nav, .dropdown-menu {
@@ -11,7 +24,7 @@
   }
 
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: #fff;
   }
 
@@ -33,7 +46,7 @@
     color: invert($headings-color);
   }
 
-
+  .navbar-nav > li.active,
   li.dropdown.active {
     a {
       color: #fff;
