@@ -1,0 +1,25 @@
+{
+  "name": "elliotboney.github.io",
+  "version": "0.0.1",
+  "homepage": "http://elliotboney.github.io/",
+  "description": "Elliot Boney's github.io page",
+  "main": "index.html",
+  "authors": [
+    "Elliot Boney <elliotboney@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lumen_variables": "https://bootswatch.com/lumen/_variables.scss",
+    "bootswatch": "https://bootswatch.com/lumen/_bootswatch.scss",
+    "bootstrap-sass": "~3.3.3",
+    "animate.css": "~3.2.3"
+  }
+}

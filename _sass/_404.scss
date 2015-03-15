@@ -1,0 +1,43 @@
+#fourofour, #page {
+
+  body {
+    background: $gray;
+    color: invert($gray);
+  }
+
+  nav, .dropdown-menu {
+    background: $gray-dark;
+    border-color: $gray-darker;
+  }
+
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+  }
+
+  #brandimg {
+    -webkit-filter: invert(1);
+  }
+
+  #brandname {
+    &.animated {
+      color: #fff;
+    }
+  }
+
+  footer {
+    background-color: $gray-dark;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: invert($headings-color);
+  }
+
+
+  li.dropdown.active {
+    a {
+      color: #fff;
+    }
+  }
+
+}
