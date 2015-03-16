@@ -3,27 +3,32 @@ layout: default
 title: Elliot Boney | Home
 htmlid: page
 ---
-<div class="posts row">
+<div class="row">
+<div class="posts col-md-8 col-md-offset-2">
+{% assign loop_index = 0 %}
   {% for post in site.posts %}
-  <article class="summary">
-    <div class="entry-meta-date col-xs-1 col-xs-offset-1">
+  {% capture loop_index %}{{ loop_index | plus:1 }}{% endcapture %}
+  <article class="summary {% if loop_index != '1' %}bordered{% endif %}">
+    <div class="entry-meta-date col-sm-1 hidden-xs">
       <span class="date-d">
-      {{ post.date | date: "%d" }}
+        {{ post.date | date: "%d" }}
       </span>
       <span class="m">
-      {{ post.date | date: "%B" }}
+        {{ post.date | date: "%B" }}
       </span>
     </div>
-    <div class="post-summary col-sm-9">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><small class="pull-right hidden"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%m/%d/%Y" }}</small></h1>
-
+    <div class="post-summary col-sm-11">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <span class="border"></span>
+      <span class="xs-date visible-xs-inline-block"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%m/%d/%Y" }}</span>
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-default btn-xs read-more">Read More</a>
     </div>
   </article>
   <div class="clearfix"></div>
   {% endfor %}
+</div>
 </div>

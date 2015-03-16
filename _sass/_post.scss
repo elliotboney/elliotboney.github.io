@@ -1,3 +1,24 @@
+.border {
+  background: none repeat scroll 0 0 #999999;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 25px;
+  margin-top: 12px;
+  @include mq(xs) {
+    margin-bottom: 12px;
+  }
+}
+
+.xs-date {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+  color: $brand-primary;
+  font-family: $headings-font-family;
+}
+
 .entry-meta-date {
   color: $brand-primary;
   font-family: $headings-font-family;
@@ -19,18 +40,36 @@
 
 
 a.read-more {
-// text-transform: uppercase;
+  // @include mq(xs) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  // }
 }
 
 
 article {
+  overflow: auto;
   p {
     font-size: 20px;
     color: $gray-dark;
     line-height: 1.8;
   }
   &.summary {
+    margin-bottom: 40px;
+    &.bordered {
+      border-top: 1px solid $gray-lighter;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+    p {
+      @include mq(xs) {
+       text-align: justify;
+      }
+    }
     h1 {
+      text-align: center;
       a {
         transition: color .4s;
         color: $gray;
@@ -41,6 +80,9 @@ article {
       small {
         margin-top: 8px;
       }
+    }
+    div.entry {
+      margin-bottom: 20px;
     }
   }
 }
