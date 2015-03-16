@@ -5,15 +5,25 @@ htmlid: page
 ---
 <div class="posts row">
   {% for post in site.posts %}
-    <article class="">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <article class="summary">
+    <div class="entry-meta-date col-xs-1 col-xs-offset-1">
+      <span class="date-d">
+      {{ post.date | date: "%d" }}
+      </span>
+      <span class="m">
+      {{ post.date | date: "%B" }}
+      </span>
+    </div>
+    <div class="post-summary col-sm-9">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><small class="pull-right hidden"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%m/%d/%Y" }}</small></h1>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    </div>
+  </article>
+  <div class="clearfix"></div>
   {% endfor %}
 </div>

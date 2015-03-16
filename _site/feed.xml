@@ -8,10 +8,10 @@
     
       <item>
         <title>Nuhabitat Spinner</title>
-        <description>&lt;p data-height=&quot;150&quot; data-theme-id=&quot;13178&quot; data-slug-hash=&quot;pvQyjX&quot; data-default-tab=&quot;result&quot; data-user=&quot;elliotboney&quot; class=&#39;codepen&#39;&gt;
-  See the Pen &lt;a href=&#39;http://codepen.io/elliotboney/pen/pvQyjX/&#39;&gt;Pure CSS Spinner&lt;/a&gt; by Elliot Boney (&lt;a href=&#39;http://codepen.io/elliotboney&#39;&gt;@elliotboney&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p data-height=&quot;150&quot; data-theme-id=&quot;13178&quot; data-slug-hash=&quot;pvQyjX&quot; data-default-tab=&quot;result&quot; data-user=&quot;elliotboney&quot; class=&quot;codepen&quot;&gt;
+  See the Pen &lt;a href=&quot;http://codepen.io/elliotboney/pen/pvQyjX/&quot;&gt;Pure CSS Spinner&lt;/a&gt; by Elliot Boney (&lt;a href=&quot;http://codepen.io/elliotboney&quot;&gt;@elliotboney&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 </description>
         <pubDate>Sat, 15 Mar 2014 00:00:00 -0500</pubDate>
         <link>/Nuhabitat-Spinner/</link>
@@ -20,15 +20,10 @@
     
       <item>
         <title>Jekyll Github.io Page Setup</title>
-        <description>&lt;p&gt;I got my &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; page finally cranking out pages with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Here is a brief rundown of what it does, why it&amp;#39;s
-baller, and how you can get your own going quickly. You should definitely get one started today, it&amp;#39;s free.&lt;/p&gt;
+        <description>&lt;p&gt;I got my &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; page finally cranking out pages with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Here is a brief rundown of what it does, why it’s baller, and how you can get your own going quickly. You should definitely get one started today, it’s free.&lt;/p&gt;
 
-&lt;h3&gt;WTF is &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;?&lt;/h3&gt;
-
-&lt;p&gt;Essentially &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; translates your plain text into static websites and blogs. You can use &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; or &lt;a href=&quot;http://redcloth.org/textile&quot;&gt;Textile&lt;/a&gt; to
-write your posts and pages, and out comes a static site. There is no database to mess with, although you can use
-&lt;a href=&quot;http://jekyllrb.com/docs/collections/&quot;&gt;collections&lt;/a&gt; to store your data. It has a really awesome template language called &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid&lt;/a&gt; that let&amp;#39;s you do stuff like
-this (an example from my own menu):&lt;/p&gt;
+&lt;h3 id=&quot;wtf-is-jekyll&quot;&gt;WTF is &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;?&lt;/h3&gt;
+&lt;p&gt;Essentially &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; translates your plain text into static websites and blogs. You can use &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; or &lt;a href=&quot;http://redcloth.org/textile&quot;&gt;Textile&lt;/a&gt; to write your posts and pages, and out comes a static site. There is no database to mess with, although you can use &lt;a href=&quot;http://jekyllrb.com/docs/collections/&quot;&gt;collections&lt;/a&gt; to store your data. It has a really awesome template language called &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid&lt;/a&gt; that let’s you do stuff like this (an example from my own menu):&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown-toggle&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dropdown&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Posts &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;caret&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
@@ -39,12 +34,56 @@ this (an example from my own menu):&lt;/p&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h3&gt;Get your repo&lt;/h3&gt;
+&lt;h3 id=&quot;get-your-repo&quot;&gt;Get Your Repo&lt;/h3&gt;
+&lt;p&gt;Follow the instructions over at &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; to get your repo started, cloned locally and goin.&lt;br /&gt;
+If you are ADD and want the short version just do this:&lt;br /&gt;
+1. Go &lt;a href=&quot;https://github.com/new&quot;&gt;create a repo&lt;/a&gt; named &lt;code&gt;username.github.io&lt;/code&gt; where username is, well, your username.&lt;br /&gt;
+2. &lt;code&gt;git clone https://github.com/username/username.github.io&lt;/code&gt;&lt;br /&gt;
+3. Finally, to get it going,&lt;/p&gt;
 
-&lt;p&gt;Follow the instructions over at &lt;a href=&quot;https://pages.github.com/&quot;&gt;github.io&lt;/a&gt; to get your repo started, cloned locally and goin.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;username.github.io
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt; &amp;gt; index.html
+git add --all
+git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
+git push -u origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file.
-For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;h3 id=&quot;setup-jekyll&quot;&gt;Setup Jekyll&lt;/h3&gt;
+&lt;p&gt;Go into your &lt;code&gt;username.github.io&lt;/code&gt; directory and do the following:&lt;/p&gt;
+
+&lt;p&gt;Create a file named &lt;code&gt;Gemfile&lt;/code&gt; with the following contents:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;open-uri&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;https://pages.github.com/versions.json&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;github-pages&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;github-pages&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then to install it all and get it serving locally&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bundle install
+gem install jekyll
+jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;create-a-post&quot;&gt;Create a Post&lt;/h3&gt;
+&lt;p&gt;If you don’t have one already, go into &lt;code&gt;/_posts/&lt;/code&gt; and create a markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+
+&lt;h3 id=&quot;do-more&quot;&gt;Do More&lt;/h3&gt;
+&lt;p&gt;To get a really good idea of how to get templating and such going, and if you are like me and learn by seeing a working example and then copying the parts you like, go to &lt;a href=&quot;https://github.com/elliotboney/elliotboney.github.io&quot;&gt;my .io repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;├── _data
+├── _includes     &lt;span class=&quot;c&quot;&gt;# holds the different includes for templates&lt;/span&gt;
+├── _layouts      &lt;span class=&quot;c&quot;&gt;# holds your layouts&lt;/span&gt;
+├── _posts        &lt;span class=&quot;c&quot;&gt;# posts go in here, i prefer .md&lt;/span&gt;
+├── _sass         &lt;span class=&quot;c&quot;&gt;# default sass include directory (for style.scss imports)&lt;/span&gt;
+├── _site         &lt;span class=&quot;c&quot;&gt;# where Jekyll compiles the site to&lt;/span&gt;
+├── assets        &lt;span class=&quot;c&quot;&gt;# where I keep my images, js, vendor files&lt;/span&gt;
+├── 404.html      &lt;span class=&quot;c&quot;&gt;# with this file, 404 errors will go here&lt;/span&gt;
+├── Gemfile       &lt;span class=&quot;c&quot;&gt;# bundler file we created earlier&lt;/span&gt;
+├── _config.yml   &lt;span class=&quot;c&quot;&gt;# yaml format configuration&lt;/span&gt;
+├── index.html    &lt;span class=&quot;c&quot;&gt;# main index file&lt;/span&gt;
+└── style.scss    &lt;span class=&quot;c&quot;&gt;# main style file&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;!-- Links follow here --&gt;
 </description>

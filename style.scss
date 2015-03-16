@@ -9,8 +9,14 @@
 @import 'post';
 @import 'errors';
 
-/* Sticky footer styles
--------------------------------------------------- */
+h1, h2 {
+  text-transform: uppercase;
+}
+
+code {
+  font-size: 15px;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -29,9 +35,14 @@ body {
   margin-bottom: $footer-height+20px;
 }
 
+nav, .dropdown-menu {
+  font-family: $headings-font-family;
+  font-size: 14px;
+}
+
 .navbar-brand {
   font-size: 18px;
-  line-height: 19px;
+  line-height: 26px;
 
   img {
     float: left;
@@ -59,7 +70,7 @@ body {
     z-index: -1;
     color: #fff;
     &.animated {
-      color: $gray-darker;
+      color: $gray-dark;
       opacity: 1;
     @include prefix(transform, translateX(0%));
 

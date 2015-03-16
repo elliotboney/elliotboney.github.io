@@ -1,10 +1,14 @@
 #fourofour, html.dark {
 
-  a {
-    color: desaturate(lighten($link-color, 35%), 50%);
-    &:hover {
-    color: lighten($link-color, 25%);
-
+  #pager {
+    background: $gray;
+  }
+  article {
+    a {
+      color: desaturate(lighten($link-color, 35%), 50%);
+      &:hover {
+        color: lighten($link-color, 25%);
+      }
     }
   }
 

@@ -1,0 +1,14 @@
+<nav id="pager">
+  <ul class="pager">
+    <li class="previous {% if page.previous.url %} {% else %}disabled{% endif %}">
+      <a href="{{page.previous.url}}" title="{{page.previous.title}}">
+        <span aria-hidden="true">&larr;</span> Older
+      </a>
+    </li>
+    <li class="next {% if page.next.url %} {% else %}disabled{% endif %}">
+      <a href="{{page.next.url}}" title="{{page.next.title}}">
+        Newer <span aria-hidden="true">&rarr;</span>
+      </a>
+    </li>
+  </ul>
+</nav>

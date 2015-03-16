@@ -2,7 +2,8 @@
 layout: default
 htmlid: post
 ---
-
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
 <article class="post">
   <div class="headmeta page-header">
     <h1 class="">{{ page.title }}</h1>
@@ -10,9 +11,9 @@ htmlid: post
   </div>
 
   <div class="entry">
-  {{ content }}
+    {{ content }}
   </div>
-
-
-
-  </article>
+</article>
+</div>
+</div>
+{% include paginate.html %}
