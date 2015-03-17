@@ -146,7 +146,7 @@ convert -crop `input.jpg +sigmoidal-contrast 5,15 -blur 10 -bordercolor White -b
 </div>
 
 ## Todo ##
--[ ] Get the black border images too!
+<i class="fa fa-square-o"></i> &nbsp; Get the black border images too!
 
 [ImageMagick]: http://www.imagemagick.org/
 [sigmoidal contrast]: http://www.imagemagick.org/script/command-line-options.php?#sigmoidal-contrast
