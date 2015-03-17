@@ -1,14 +1,14 @@
 ---
 title: Remove a Border Using "Fuzzy Crop"
 ---
-Here is the command I ended up using to get this to work. Essentially I had to adjust the contrast using [sigmoidal contrast], to a point that would darken skies enough so when I did a 'fuzzy crop', the sky would not get cropped as well.
+Here is the [ImageMagick] command I ended up using to get this to work. Essentially I had to adjust the contrast using [sigmoidal contrast], to a point that would darken skies enough so when I did a 'fuzzy crop', the sky would not get cropped as well.
 
 Well the output of this would look horrible, all I wanted to keep was the size of the output, as well as the offset of the crop to the original. Note below, I use this information formatted using ```-format '%wx%h%O' info:``` as a mask to crop my original image.
 
-This way I get to keep my untouched colors and levels, but use the crop from my adjusted one. The blur gave me about an extra 5 pixel white border around the image, which I quickly fixed with a ```-shave 5x5```.
+This way I get to keep my untouched colors and levels, but use the crop from my adjusted one. The blur gave me about an extra 5 pixel white border around the image, which I quickly fixed with a ```-shave 3x3```.
 
 {% highlight bash %}
-convert -crop `input.jpg +sigmoidal-contrast 5,15 -blur 5 -fuzz 25% -trim -format '%wx%h%O' info:` +repage -filter Catrom -size 640x480 -resize 640x480 input.jpg output.jpg
+convert -crop `input.jpg +sigmoidal-contrast 5,15 -blur 10 -bordercolor White -border 1 -fuzz 30% -trim -format '%wx%h%O' info:` +repage -shave 3x3 -filter Catrom -size 640x480 -resize 640x480 input.jpg output.jpg
 {% endhighlight %}
 
 <style>
@@ -145,5 +145,8 @@ convert -crop `input.jpg +sigmoidal-contrast 5,15 -blur 5 -fuzz 25% -trim -forma
   <!-- End Set -->
 </div>
 
+## Todo ##
+- [ ] Get the black border images too!
 
+[ImageMagick]: http://www.imagemagick.org/
 [sigmoidal contrast]: http://www.imagemagick.org/script/command-line-options.php?#sigmoidal-contrast
