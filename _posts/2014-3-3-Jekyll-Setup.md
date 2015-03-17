@@ -6,7 +6,7 @@ author: Elliot Boney
 
 I got my [github.io] page finally cranking out pages with [Jekyll]. Here is a brief rundown of what it does, why it's baller, and how you can get your own going quickly. You should definitely get one started today, it's free.
 
-### WTF is [Jekyll]?
+### WTF is [Jekyll]? ###
 Essentially [Jekyll] translates your plain text into static websites and blogs. You can use [Markdown] or [Textile] to write your posts and pages, and out comes a static site. There is no database to mess with, although you can use [collections] to store your data. It has a really awesome template language called [Liquid] that let's you do stuff like this (an example from my own menu):
 {% highlight html %}
 {% raw %}
@@ -23,7 +23,7 @@ Essentially [Jekyll] translates your plain text into static websites and blogs. 
 
 
 
-### Get Your Repo
+### Get Your Repo ###
 Follow the instructions over at [github.io] to get your repo started, cloned locally and goin.
 If you are ADD and want the short version just do this:
 1. Go [create a repo] named ```username.github.io``` where username is, well, your username.
