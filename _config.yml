@@ -6,13 +6,9 @@ author:
 
 baseurl: //elliotboney.github.io
 
-paginate: 5
-paginate_path: '/blog/:num'
-
-
 # Make local act like github
 safe: true
-permalink: /post/:title
+permalink: /:title
 
 timezone: America/Chicago
 
