@@ -1,9 +1,25 @@
 #fourofour, html.dark {
 
+  .entry-meta-date {
+    color: lighten($brand-primary, 25%);
+  }
+
+  .btn.read-more {
+    color: $gray-dark;
+    &:hover {
+      color: $link-color;
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+  }
+
   #pager {
     background: $gray;
   }
   article {
+    p {
+    color: #fff;
+  }
     a {
       color: desaturate(lighten($link-color, 35%), 50%);
       &:hover {

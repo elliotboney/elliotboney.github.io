@@ -24,6 +24,7 @@ convert -crop `input.jpg +sigmoidal-contrast 5,15 -blur 10 -bordercolor White -b
   .retsthumb {
     border: 16px #C50DBD solid;
     max-height: 350px;
+    margin: 0 auto;
     margin-top: 38%;
     display: block;
     position: relative;
