@@ -1,5 +1,6 @@
 ---
 title: How to get from color A to color B, Programmatically
+tags: [sass, js]
 ---
 Have you ever wanted to know how to get from color A to color B, programmatically? I have found myself on several occasions using a button, or some other styled html element and wanting to change the colors. The problem is I can't tell how the original author got from, say, the main button color to the shadow of the button color. I'm going to give you how I got there first with SCSS, then converted that JS as a tool for anyone to use.
 

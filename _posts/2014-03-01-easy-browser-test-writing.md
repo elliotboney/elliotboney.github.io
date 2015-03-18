@@ -1,5 +1,6 @@
 ---
 title: Easy Browser Test Writing with DalekJS
+featimg: http://dalekjs.com/img/ee9830c8.logo.png
 ---
 I am so lazy, I never want to do the same thing twice if I can solve it with a program. This is especially true for shit I hate to do, like QA websites. I have tried several testing platforms out there. CasperJS, SlimerJS, Buster, Nightwatch, Gemini, etc etc. Lorem ipsum dolor sit amet, mel at epicurei comprehensam, sed ne decore nominavi copiosae. Sea populo comprehensam ad, pri ea noster maiestatis. Ad velit perfecto cum, laoreet disputando consectetuer ut per. Eos quem lobortis et, vis eu modo expetenda, has magna primis invidunt eu. Ius eu ludus discere sensibus, sed in dictas delectus.
 

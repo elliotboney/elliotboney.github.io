@@ -6,15 +6,25 @@ author:
 
 baseurl: //elliotboney.github.io
 
+paginate: 5
+paginate_path: '/blog/:num'
+
+
 # Make local act like github
 safe: true
-permalink: /:title/
+permalink: /post/:title
+
 timezone: America/Chicago
 
 # Markdown Conversion
 markdown: kramdown
 kramdown:
   input: GFM
+
+#collections
+collections:
+  tags:
+    output: true
 
 # Defaults
 defaults:

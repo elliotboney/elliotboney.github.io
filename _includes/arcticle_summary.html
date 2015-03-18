@@ -1,0 +1,28 @@
+<article class="summary {% if loop_index != '1' %}bordered{% endif %}">
+  {% if post.featimg %}
+  <div class="col-sm-1 hidden-xs"></div>
+  <div class="col-sm-11">
+    <img src="{{post.featimg}}" class="img-responsive center-block" style="max-height: 155px"/>
+  </div>
+  {% endif %}
+  <div class="entry-meta-date col-sm-1 hidden-xs">
+    <span class="date-d">
+      {{ post.date | date: "%d" }}
+    </span>
+    <span class="m">
+      {{ post.date | date: "%B" }}
+    </span>
+  </div>
+  <div class="post-summary col-sm-11">
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <span class="border"></span>
+    <span class="xs-date visible-xs-inline-block"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%m/%d/%Y" }}</span>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <div class="read-more-wrap">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-default btn-xs read-more">Read More</a>
+    </div>
+  </div>
+</article>
+<div class="clearfix"></div>

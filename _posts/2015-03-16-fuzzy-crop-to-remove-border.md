@@ -1,5 +1,6 @@
 ---
 title: Remove a Border Using "Fuzzy Crop"
+featimg: /assets/img/png/imagecropping.png
 ---
 Here is the [ImageMagick] command I ended up using to get this to work. Essentially I had to adjust the contrast using [sigmoidal contrast], to a point that would darken skies enough so when I did a 'fuzzy crop', the sky would not get cropped as well.
 
