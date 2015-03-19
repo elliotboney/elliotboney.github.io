@@ -9,6 +9,14 @@
 @import 'post';
 @import 'errors';
 
+h1 {
+  font-size: 2.8em
+}
+
+h2 {
+  @extend .h2;
+}
+
 h1, h2 {
   text-transform: uppercase;
 }
@@ -120,6 +128,14 @@ iframe[id^="cp_embed"] {
   border-width: 0 1px 4px 1px;
   border-color: #e7e7e7;
 }
+
+h1.page-header {
+  margin-bottom: 60px;
+}
+
+
+
+
 
 @import 'dark';
 

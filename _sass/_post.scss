@@ -1,3 +1,17 @@
+// LAbels
+.label {
+  @extend .label-default;
+}
+
+.label-js {
+    background-color: $brand-info;
+}
+
+.tags {
+  position: relative;
+  top: -1px;
+}
+
 .border {
   background: none repeat scroll 0 0 #999999;
   display: block;
@@ -54,6 +68,9 @@ a.read-more {
 
 article {
   // overflow: auto;
+  h1 {
+    font-size: 2.4em;
+  }
   p {
     font-size: 20px;
     color: $gray-dark;
@@ -71,7 +88,7 @@ article {
        text-align: justify;
       }
     }
-    h1 {
+    h2 {
       text-align: center;
       a {
         transition: color .4s;
@@ -91,14 +108,14 @@ article {
 }
 
 html#post {
-  h1 {
+  h1, h2 {
     text-align: center;
   }
 }
 
 .headmeta {
   text-align: center;
-  h1 {
+  h1, h2 {
     margin-bottom: 0;
   }
   .author {

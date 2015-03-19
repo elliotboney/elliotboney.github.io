@@ -4,3 +4,6 @@
   name: NodeJs
 - slug: sass
   name: Sass
+
+- slug: design
+  name: Design
