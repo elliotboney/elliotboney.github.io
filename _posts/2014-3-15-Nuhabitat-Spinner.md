@@ -2,6 +2,8 @@
 layout: post
 title: Nuhabitat Spinner
 author: Elliot Boney
+tags: [js, design]
+
 ---
 
 <p data-height="150" data-theme-id="13178" data-slug-hash="pvQyjX" data-default-tab="result" data-user="elliotboney" class='codepen'>

@@ -1,9 +1,8 @@
 - slug: js
   name: JavaScript
-- slug: nodejs
-  name: NodeJs
 - slug: sass
   name: Sass
-
 - slug: design
   name: Design
+- slug: git
+  name: Git

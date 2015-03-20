@@ -1,7 +1,7 @@
 ---
 title: NodeJS Site Deployment with Shipit
 featimg: https://avatars2.githubusercontent.com/u/10684892?v=3&s=100
-tags: [js, nodejs]
+tags: [js]
 ---
 I just finished building out a full development to staging to production deployment system using Shipit. Lorem ipsum dolor sit amet, mel at epicurei comprehensam, sed ne decore nominavi copiosae. Sea populo comprehensam ad, pri ea noster maiestatis.
 

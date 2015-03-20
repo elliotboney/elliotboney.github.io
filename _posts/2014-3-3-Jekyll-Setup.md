@@ -2,7 +2,8 @@
 layout: post
 title: Jekyll Github.io Page Setup
 author: Elliot Boney
-featimg: http://jekyllrb.com/img/logo-2x.png
+featimg: /assets/img/png/jekyllocto.png
+tags: [git]
 ---
 I got my [github.io] page finally cranking out pages with [Jekyll]. Here is a brief rundown of what it does, why it's baller, and how you can get your own going quickly. You should definitely get one started today, it's free.
 

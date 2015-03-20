@@ -1,5 +1,7 @@
 ---
 title: Finally, Pain-free Form Validation for Bootstrap
+tags: [js, design]
+featimg: /assets/img/png/formvalidate.png
 ---
 Thank the Lord! I finally found a form validation library for bootstrap that doesn't make me want to wash my mouth out with a revolver to us. My requirements were simple. I wanted something that could easily validate a form for some criteria before allowing a user to submit, and if they eff'ed up, use Bootstrappy icons and colors to tell them where.
 
