@@ -6,15 +6,17 @@
 $header-height: 54px;
 $footer-height: 76px;
 
+$green: #3FB76C;
+$bluegreen: #43BFB3;
+$lightblue: #40ABD5;
+$orange: #f29a76;
+
 // Lumen 3.3.2
 // Variables
 // --------------------------------------------------
 
-
 //== Colors
-//
 //## Gray and brand colors for use across Bootstrap.
-
 $gray-base:              #000;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
 $gray-dark:              lighten($gray-base, 20%);   // #333

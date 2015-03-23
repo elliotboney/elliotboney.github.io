@@ -1,15 +1,55 @@
 // LAbels
+.entry-meta-date {
+  .label {
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 2px;
+    display: block;
+    width: 50%;
+  }
+}
+
 .label {
   @extend .label-default;
+  font-family: 'Crimson Text';
+  transition: all .3s;
+  &:hover {
+    color: #999999;
+    background-color: lighten(#999999, 35%);
+  }
+}
+
+.label-design {
+  background-color: $orange;
+  &:hover {
+    color: $orange;
+    background-color: lighten($orange, 25%);
+  }
 }
 
 .label-js {
-    background-color: $brand-info;
+  background-color: $brand-info;
+  &:hover {
+    color: $brand-info;
+    background-color: lighten(desaturate($brand-info, 10%), 25%);
+  }
+}
+
+.label-sass {
+  background-color: $brand-primary;
+  &:hover {
+    color: $brand-primary;
+    background-color: lighten(desaturate($brand-primary, 20%), 45%);
+  }
 }
 
 .tags {
   position: relative;
   top: -1px;
+}
+
+.featimgwrap {
+  margin-top: 30px;
 }
 
 .border {
@@ -67,7 +107,7 @@ a.read-more {
 
 
 article {
-  // overflow: auto;
+  overflow: auto;
   h1 {
     font-size: 2.4em;
   }
@@ -86,25 +126,25 @@ article {
     p {
       @include mq(xs) {
        text-align: justify;
+     }
+   }
+   h2 {
+    text-align: center;
+    a {
+      transition: color .4s;
+      color: $gray;
+      &:hover {
+        color: $link-color;
       }
     }
-    h2 {
-      text-align: center;
-      a {
-        transition: color .4s;
-        color: $gray;
-        &:hover {
-          color: $link-color;
-        }
-      }
-      small {
-        margin-top: 8px;
-      }
-    }
-    div.entry {
-      margin-bottom: 20px;
+    small {
+      margin-top: 8px;
     }
   }
+  div.entry {
+    margin-bottom: 20px;
+  }
+}
 }
 
 html#post {

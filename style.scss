@@ -35,11 +35,11 @@ html {
 }
 
 a {
-    @include prefix(transition, color .1s);
-    &:hover {
-      text-decoration: none;
-      color: lighten($link-color, 15%);
-    }
+  @include prefix(transition, color .1s);
+  &:hover {
+    text-decoration: none;
+    color: lighten($link-color, 15%);
+  }
 }
 
 body {
@@ -84,7 +84,7 @@ nav, .dropdown-menu {
     &.animated {
       color: $gray-dark;
       opacity: 1;
-    @include prefix(transform, translateX(0%));
+      @include prefix(transform, translateX(0%));
 
     }
   }
@@ -133,9 +133,124 @@ h1.page-header {
   margin-bottom: 60px;
 }
 
+//animations
+$transition: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
 
+//social media colors
+$colors: (
+  "facebook": "#3B5998",
+  "twitter": "#3CF",
+  "google": "#DC4A38",
+  "linkedin": "#007BB6",
+  "skype": "#00AFF0"
+  );
 
+//button size
+$size: 40px;
 
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+.social {
+
+  padding-top: 35px !important;
+
+  .linkedin {
+    line-height: 32px !important;
+  }
+
+  .fa-linkedin {
+    margin-left: 2px !important;
+  }
+
+  .fa-facebook {
+    margin-left: -1px !important;
+  }
+
+  .fa-google-plus {
+    margin-left: 4px !important;
+  }
+
+  .github {
+    line-height: 32px !important;
+  }
+
+  .social-buttons {
+    height: #{$size};
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .social-button {
+    display: inline-block;
+    background-color: #EEEEEE;
+    width: #{$size};
+    height: #{$size};
+    line-height: 35px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 28%;
+    // box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
+    transition: $transition;
+
+    &:before {
+      content: '';
+      background-color: #000;
+      width: 120%;
+      height: 120%;
+      position: absolute;
+      top: 90%;
+      left: -110%;
+      transform: rotate(45deg);
+      transition: $transition;
+    }
+
+    .fa {
+      font-size: 28px;
+      vertical-align: middle;
+      transform: scale(.8);
+      transition: $transition;
+    }
+
+    @each $class,$color in $colors {
+      &.#{$class} {
+        &:before {
+          background-color: #{$color};
+        }
+        .fa {
+          // color: #{$color};
+        }
+      }
+    }
+
+    &:hover {
+      &:before {
+        top: -10%;
+        left: -10%;
+      }
+      .fa {
+        color: #fff;
+        transform: scale(1);
+      }
+    }
+
+    &:focus {
+      opacity: .85;
+    }
+  }
+} // end .social
 
 @import 'dark';
 

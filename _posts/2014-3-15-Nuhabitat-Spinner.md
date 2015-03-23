@@ -2,7 +2,7 @@
 layout: post
 title: Nuhabitat Spinner
 author: Elliot Boney
-tags: [js, design]
+tags: [js, design, sass]
 
 ---
 

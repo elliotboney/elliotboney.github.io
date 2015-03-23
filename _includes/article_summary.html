@@ -1,19 +1,37 @@
+{% if post.tags.size > 0 %}
+  {% for post_tag in post.tags %}
+    {% for data_tag in site.data.tags %}
+      {% if data_tag.slug == post_tag %}
+        {% assign tag = data_tag %}
+      {% endif %}
+    {% endfor %}
+      {% if tag %}
+        {% capture tags_content_temp %}{{ tags_content }}<a href="/tags/{{ tag.slug }}/" class=""><span class="label label-{{ tag.slug }}">{{ tag.name }}</span></a>{% if forloop.last == false %} {% endif %}{% endcapture %}
+        {% assign tags_content = tags_content_temp %}
+      {% endif %}
+  {% endfor %}
+{% else %}
+    {% assign tags_content = '' %}
+{% endif %}
+
 <article class="summary {% if loop_index != '1' %}bordered{% endif %}">
   {% if post.featimg %}
-  <div class="col-sm-1 hidden-xs"></div>
-  <div class="col-sm-11">
+  <div class="col-sm-2 hidden-xs"></div>
+  <div class="col-sm-10 featimgwrap">
     <img src="{{post.featimg}}" class="img-responsive center-block" style="max-height: 155px"/>
   </div>
   {% endif %}
-  <div class="entry-meta-date col-sm-1 hidden-xs">
+  <div class="entry-meta-date col-sm-2 hidden-xs">
     <span class="date-d">
       {{ post.date | date: "%d" }}
     </span>
     <span class="m">
       {{ post.date | date: "%B" }}
     </span>
+    <span id="tags">{{ tags_content }}</span>
+
   </div>
-  <div class="post-summary col-sm-11">
+  <div class="post-summary col-sm-10">
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     <span class="border"></span>
     <span class="xs-date visible-xs-inline-block"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%m/%d/%Y" }}</span>
@@ -26,3 +44,4 @@
   </div>
 </article>
 <div class="clearfix"></div>
+{% assign tags_content = '' %}
