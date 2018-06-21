@@ -4,7 +4,7 @@ author:
   name: Elliot Boney
   email: elliotboney@gmail.com
 
-baseurl: //elliotboney.github.io
+# baseurl: //elliotboney.github.io
 
 # Make local act like github
 safe: true
@@ -16,6 +16,14 @@ timezone: America/Chicago
 markdown: kramdown
 kramdown:
   input: GFM
+
+# Plugins
+plugins:
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
+   - jekyll-relative-links
+
 
 #collections
 collections:
@@ -50,9 +58,6 @@ version: v1.1.0
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
