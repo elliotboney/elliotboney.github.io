@@ -4,7 +4,7 @@ author:
   name: Elliot Boney
   email: elliotboney@gmail.com
 
-# baseurl: //elliotboney.github.io
+baseurl: //elliotboney.github.io
 
 # Make local act like github
 safe: true
